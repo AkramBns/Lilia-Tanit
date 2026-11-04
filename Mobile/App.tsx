@@ -81,7 +81,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="dark" />
       <View style={styles.headerRow}>
-        <Text style={styles.header}>Tanit</Text>
+        <Text style={styles.header}>Lilia Tanit</Text>
         <View style={styles.headerIcons}>
           <Pressable onPress={() => setImportVisible(true)} hitSlop={10}>
             <MaterialCommunityIcons name="import" size={26} color="#333" />
