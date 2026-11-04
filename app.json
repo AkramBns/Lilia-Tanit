@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TanitApp",
-    "slug": "TanitApp",
+    "name": "Lilia Tanit",
+    "slug": "lilia-tanit-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,16 +10,30 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.lilia.tanit.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0A4FB3",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "monochromeImage": "./assets/android-icon-foreground.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-notifications",
+      "@react-native-community/datetimepicker",
+      [
+          "expo-splash-screen",
+          {
+            "image": "./assets/splash-icon.png",
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#FFFFFF"
+          }
+      ]
+    ]
   }
 }
